@@ -33,14 +33,29 @@ public:
 	~AI();
 
 	void Init(Console* console);
+
+	//Runs AI alghoritms for the specific board and returns the best move
 	Move GetBestMove(Board board, EColor color);
+
+	//Gets all possible moves for the specific board
 	vector<Move> GetAllBoardMoves(Board board, EColor currentColor);
 
+	//Gets the list of pieces positions which are attacking specific field
 	vector<Position> GetFieldAttackers(Board board, Position pos, EColor enemyColor);
+
+	//Gets the list of available moves for the specific king
 	vector<Move> CheckKingMoves(Board board, vector<Move> moves, Position pos);
+
+	//Returns the heurictic value of the specific board
 	int RunHeuristic(Board board);
+
+	//Returns true in king with specific color is mated
 	bool IsMate(Board board, EColor kingColor);
+
+	//Returns true if king with specific color is checked
 	bool IsCheck(Board board, EColor kingColor);
+
+	//Resets AI state
 	void Reset();
 
 	float MaxTime;

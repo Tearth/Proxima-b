@@ -10,10 +10,19 @@ public:
 	CoordsConverter();
 	~CoordsConverter();
 
+	//Converts standard notation to board position
 	Move FromTrueToBoard(string trueCoord, EColor color, Board board);
+
+	//Converts standard notation to internal
 	Position ConvertCoordinates(string coords);
+
+	//Converts internal notation to standard
 	string CovertFromBoardToTrue(Position pos);
+
+	//Converts to English piece symbol
 	char ConvertPolishToEnglishPieceID(char id);
+
+	//Converts from FICS notation to internal
 	Board ConvertFromFICSFormatToBoard(string ficsFormat);
 
 private:

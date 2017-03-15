@@ -31,14 +31,6 @@ Move AI::GetBestMove(Board board, EColor color)
 		else
 		{
 			int openingIndex = availableOpenings.size() == 1 ? 0 : Random::Rand(0, availableOpenings.size() - 1);
-			/*for (int i = 0; i < availableOpenings.size(); i++)
-			{
-				if (availableOpenings[i].Name == "Four Knights Variation, Symmetrical English")
-				{
-					openingIndex = i;
-					break;
-				}
-			}*/
 
 			_console->AddNewLine("Move from opening book");
 			_console->AddNewLine(availableOpenings[openingIndex].Name);

@@ -15,7 +15,10 @@ public:
 	OpeningDatabase();
 	~OpeningDatabase();
 
+	//Reads file and fills the openings vector
 	void LoadDB();
+
+	//Returns vector of possible openings for the specifis board hash
 	vector<Opening> GetPossibleOpenings(unsigned long long int boardHash, int moveNumber);
 
 private:

@@ -211,7 +211,7 @@
       <Filter>Source Files\Core</Filter>
     </ClCompile>
     <ClCompile Include="Source/AI.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\AI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

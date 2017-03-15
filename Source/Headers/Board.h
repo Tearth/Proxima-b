@@ -14,18 +14,43 @@ public:
 	Board();
 	~Board();
 
+	//Sets board state to default values
 	void InitDefaultSettings();
+
+	//Returns symbol of an piece at the specific field (or ' ')
 	char GetFieldAtPosition(Position position);
+
+	//Sets piece symbol at the specific position
 	void Set(Position position, char piece);
+
+	//Returns true if the specific position is valid
 	bool IsPositionValid(Position position);
+
+	//Returns true if piece at the specific position can kill an another piece 
 	bool CanKill(Position from, Position to);
+
+	//Returns color of piece
 	EColor GetColorByPieceID(char id);
+
+	//Returns list of pieces which are attaking the specified position
 	vector<Position> GetFieldAttackers(Position pos, EColor enemyColor);
+
+	//Inverses the board
 	Board Inverse();
+
+	//Returns positions of the specified piece
 	vector<Position> FindPiece(char pieceID);
+
+	//Returns hash
 	unsigned long long int GetHash();
+
+	//Does move
 	void DoMove(Move move);
+
+	//Returns distance from p1 to p2
 	int GetDistance(Position p1, Position p2);
+
+	//Returns move using difference between boards
 	Move GetMoveByCompare(Board board);
 
 	bool CastlingWhiteDone;

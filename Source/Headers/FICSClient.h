@@ -20,8 +20,13 @@ public:
 	~FICSClient();
 	void Init(Console* console, string userName, string password, string seek);
 
+	//Starts network thread
 	void ThreadStart();
+
+	//Stopps network thread
 	void ThreadStop();
+
+	//Sends command to the server
 	int NetworkWrite(const char* input);
 
 	FICSMode Mode;

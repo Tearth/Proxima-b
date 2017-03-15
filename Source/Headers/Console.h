@@ -12,9 +12,17 @@ public:
 
 	void Init(int maxLines, int maxInputLength, sf::Vector2f position, sf::Vector2f size);
 	void Draw(sf::RenderWindow* window);
+
+	//Handles key press
 	void KeyPressed(sf::Event::TextEvent key);
+
+	//Returns true if any command is available to parse
 	bool IsNewCommandAvailable();
+
+	//Returns first available command
 	Command GetNewCommand();
+
+	//Writes line to the console
 	void AddNewLine(string line);
 private:
 	void parseCommand();
