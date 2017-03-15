@@ -50,9 +50,6 @@ public:
 	//Returns distance from p1 to p2
 	int GetDistance(Position p1, Position p2);
 
-	//Returns move using difference between boards
-	Move GetMoveByCompare(Board board);
-
 	bool CastlingWhiteDone;
 	bool CastlingBlackDone;
 	bool CastlingWhiteShort;

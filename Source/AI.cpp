@@ -257,7 +257,7 @@ MinMaxResult AI::quiescenceSearch(MinMaxInfo minMaxInfo, int alpha, int beta, Mi
 	HeuristicDiagnosticData diag;
 	int boardValue = max * _heuristic.GetBoardValue(minMaxInfo.Board, diag);
 
-	if (boardValue >= beta/* || minMaxInfo.CurrentDepth < -6*/)
+	if (boardValue >= beta)
 		return MinMaxResult(beta, minMaxInfo.CurrentDepth);
 
 	if (alpha < boardValue)
@@ -352,19 +352,6 @@ vector<Move> AI::sortMoves(vector<Move> moves, Board board, EColor currentColor)
 	bool bestFinded = false;
 	int i = 0;
 
-	/*vector<PVNode> parsedPV = currentColor == EColor::White ? _lastWhitePVNodes : _lastBlackPVNodes;
-
-	bool pvNodeExist = false;
-	Move pvMove;
-	for (int i = 0; i < parsedPV.size(); i++)
-	{
-		if (parsedPV[i].BoardHash == boardHash)
-		{
-			pvNodeExist = true;
-			pvMove = parsedPV[i].BestMove;
-		}
-	}*/
-
 	Move bestMove;
 	if (_transpositions.Exist(boardHash))
 	{
@@ -381,31 +368,15 @@ vector<Move> AI::sortMoves(vector<Move> moves, Board board, EColor currentColor)
 	{
 		Move moveToChange = moves[x];
 
-		if ((bestFinded && moves[x].From == bestMove.From && moves[x].To == bestMove.To)/* ||
-			(pvNodeExist && pvMove.From == bestMove.From && pvMove.To == bestMove.To)*/)
+		if ((bestFinded && moves[x].From == bestMove.From && moves[x].To == bestMove.To))
 		{
 			parsedMoves.insert(parsedMoves.begin(), moveToChange);
 			i++;
 		}
 		else
 		{
-			//vector<Position> fieldBalancePositionsWhite = _heuristic.GetFieldAttackersHeuristic(board, moves[x].From, EColor::White);
-			//vector<Position> fieldBalancePositionsBlack = _heuristic.GetFieldAttackersHeuristic(board, moves[x].From, EColor::Black);
-			//vector<Position> finalFieldsBalancePositions = fieldBalancePositionsWhite;
-			//finalFieldsBalancePositions.insert(finalFieldsBalancePositions.end(), fieldBalancePositionsBlack.begin(), fieldBalancePositionsBlack.end());
-			//finalFieldsBalancePositions.push_back(moves[x].From);
-
-			//int fieldBalance = fieldBalancePositionsWhite.size() - fieldBalancePositionsBlack.size();
-			/*for (int y = 0; y < finalFieldsBalancePositions.size(); y++)
-			{
-				char field = board.GetFieldAtPosition(finalFieldsBalancePositions[y]);
-				fieldBalance += _heuristic.GetPieceValue(field);
-			}*/
-
 			if (board.GetFieldAtPosition(moves[x].To) != '0' ||
-				moves[x].IsPromotion/* ||
-				(currentColor == EColor::White && fieldBalance < 0) ||
-				(currentColor == EColor::Black && fieldBalance > 0)*/)
+				moves[x].IsPromotion)
 			{
 				parsedMoves.insert(parsedMoves.begin() + i, moveToChange);
 				i++;
@@ -468,11 +439,8 @@ void AI::drawDiagInfo(vector<MinMaxResult> results, MinMaxResult best, Board boa
 			" -> " + results[i].BestMove.To.ToString() +
 			"    d:" + to_string(results[i].Depth) +
 			"    v:" + to_string(results[i].Value));
-
-		//if (results[i].BestMove.From == Position(7, 3) && results[i].BestMove.To == Position(6, 2))
-		//	x = results[i];
 	}
-	//best = x;
+
 	Board diagBoard = board;
 
 	_console->AddNewLine("");

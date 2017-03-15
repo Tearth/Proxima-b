@@ -362,12 +362,3 @@ int Board::GetDistance(Position p1, Position p2)
 {
 	return abs(p1.X - p2.X) + abs(p1.Y - p2.Y);
 }
-
-Move Board::GetMoveByCompare(Board board)
-{
-	Move m;
-
-	
-
-	return m;
-}
