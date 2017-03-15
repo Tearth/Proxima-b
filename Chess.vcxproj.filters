@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Pieces">
+      <UniqueIdentifier>{4419347a-aaba-4ac4-9a5e-2610d6abb5ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Pieces">
+      <UniqueIdentifier>{3f73ffbe-a735-4add-9816-d9ea259a027d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Board">
+      <UniqueIdentifier>{27188323-b166-4756-839c-9d60e15b09f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Board">
+      <UniqueIdentifier>{302f8cae-536d-443d-b810-42f7634e9dec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Helpers">
+      <UniqueIdentifier>{f34c5287-3572-44c1-949d-0af8bd865b16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TexturesLoader">
+      <UniqueIdentifier>{74f1e5f3-197c-4511-8098-d251b0b7bc7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TexturesLoader">
+      <UniqueIdentifier>{319405ce-8615-4018-933f-c81bdf444159}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{68c67dc8-5be9-45cf-9054-425612475567}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{a6974afd-3999-4507-b7c0-1759ab1b78ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Console">
+      <UniqueIdentifier>{71d8c3af-2022-4619-ada7-987c004ab32b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Console">
+      <UniqueIdentifier>{3dc8e4cb-472f-4219-8bdd-3822ea9e71f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Helpers">
+      <UniqueIdentifier>{b1df7338-35b6-46a7-9424-fc7a85df5013}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\AI">
+      <UniqueIdentifier>{da74e34e-7b96-4e7b-9e35-9227b5321327}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AI">
+      <UniqueIdentifier>{b542e7d6-4318-4696-981b-e7281716675f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Helpers\Timer">
+      <UniqueIdentifier>{cffa3a3b-e64f-4667-bd8f-f2582f0a74f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Helpers\Timer">
+      <UniqueIdentifier>{92a8517e-6594-48ff-9624-b8b7c5cf2226}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AI\HashTable">
+      <UniqueIdentifier>{344274b0-54f5-469e-be3e-83795f8d1b03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\AI\HashTable">
+      <UniqueIdentifier>{b84527c9-50f8-40bf-bbb5-ffdddf1029c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\AI\OpeningsDatabase">
+      <UniqueIdentifier>{f7f8d178-ac83-4379-9163-bc66ac77e054}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AI\OpeningsDatabase">
+      <UniqueIdentifier>{60745b51-d255-418b-bb68-5753902c4ca9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\FICS">
+      <UniqueIdentifier>{53440910-ecf1-4c00-9ea7-35a9847ca5dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FICS">
+      <UniqueIdentifier>{88a6ed6e-d60d-4031-96d3-71ba9363080f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source/main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/PieceBase.cpp">
+      <Filter>Source Files\Pieces</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/Board.cpp">
+      <Filter>Source Files\Board</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/Pawn.cpp">
+      <Filter>Source Files\Pieces</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/Move.cpp">
+      <Filter>Source Files\Board</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/Position.cpp">
+      <Filter>Source Files\Board</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/TexturesLoader.cpp">
+      <Filter>Source Files\TexturesLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/TextureRecord.cpp">
+      <Filter>Source Files\TexturesLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/Window.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/Core.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/SpriteRecord.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/PiecesManager.cpp">
+      <Filter>Source Files\Pieces</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/Rook.cpp">
+      <Filter>Source Files\Pieces</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/Knight.cpp">
+      <Filter>Source Files\Pieces</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/Queen.cpp">
+      <Filter>Source Files\Pieces</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/King.cpp">
+      <Filter>Source Files\Pieces</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/Bishop.cpp">
+      <Filter>Source Files\Pieces</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/Console.cpp">
+      <Filter>Source Files\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/Command.cpp">
+      <Filter>Source Files\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/Split.cpp">
+      <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/MinMaxResult.cpp">
+      <Filter>Source Files\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/Heuristic.cpp">
+      <Filter>Source Files\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/MinMaxDiagnosticData.cpp">
+      <Filter>Source Files\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/HeuristicDiagnosticData.cpp">
+      <Filter>Source Files\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/MaterialRateData.cpp">
+      <Filter>Source Files\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/KingSafetyRate.cpp">
+      <Filter>Source Files\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/ColorOperations.cpp">
+      <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/MobilityRate.cpp">
+      <Filter>Source Files\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/Timer.cpp">
+      <Filter>Source Files\Helpers\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/TimerRecord.cpp">
+      <Filter>Source Files\Helpers\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/MinMaxInfo.cpp">
+      <Filter>Source Files\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/HashTable.cpp">
+      <Filter>Source Files\AI\HashTable</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/TableItem.cpp">
+      <Filter>Source Files\AI\HashTable</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/ZobristHash.cpp">
+      <Filter>Source Files\AI\HashTable</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/SortedMove.cpp">
+      <Filter>Source Files\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/Opening.cpp">
+      <Filter>Source Files\AI\OpeningsDatabase</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/OpeningsDatabase.cpp">
+      <Filter>Source Files\AI\OpeningsDatabase</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/CoordsConverter.cpp">
+      <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/OpeningDBResult.cpp">
+      <Filter>Source Files\AI\OpeningsDatabase</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/OpeningMove.cpp">
+      <Filter>Source Files\AI\OpeningsDatabase</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/Random.cpp">
+      <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/FICSClient.cpp">
+      <Filter>Source Files\FICS</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/ConfigLoader.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source/AI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source/Headers/PieceBase.h">
+      <Filter>Header Files\Pieces</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/Board.h">
+      <Filter>Header Files\Board</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/Pawn.h">
+      <Filter>Header Files\Pieces</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/Enums.h">
+      <Filter>Header Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/Move.h">
+      <Filter>Header Files\Board</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/Position.h">
+      <Filter>Header Files\Board</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/TexturesLoader.h">
+      <Filter>Header Files\TexturesLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/TextureRecord.h">
+      <Filter>Header Files\TexturesLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/Window.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/Core.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/SpriteRecord.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/PiecesManager.h">
+      <Filter>Header Files\Pieces</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/Rook.h">
+      <Filter>Header Files\Pieces</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/Knight.h">
+      <Filter>Header Files\Pieces</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/Bishop.h">
+      <Filter>Header Files\Pieces</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/Queen.h">
+      <Filter>Header Files\Pieces</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/King.h">
+      <Filter>Header Files\Pieces</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/Console.h">
+      <Filter>Header Files\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/Command.h">
+      <Filter>Header Files\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/Split.h">
+      <Filter>Header Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/AI.h">
+      <Filter>Header Files\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/MinMaxResult.h">
+      <Filter>Header Files\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/Heuristic.h">
+      <Filter>Header Files\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/MinMaxDiagnosticData.h">
+      <Filter>Header Files\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/HeuristicDiagnosticData.h">
+      <Filter>Header Files\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/MaterialRateData.h">
+      <Filter>Header Files\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/KingSafetyRate.h">
+      <Filter>Header Files\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/ColorOperations.h">
+      <Filter>Header Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/MobilityRate.h">
+      <Filter>Header Files\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/Timer.h">
+      <Filter>Header Files\Helpers\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/TimerRecord.h">
+      <Filter>Header Files\Helpers\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/MinMaxInfo.h">
+      <Filter>Header Files\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/HashTable.h">
+      <Filter>Header Files\AI\HashTable</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/TableItem.h">
+      <Filter>Header Files\AI\HashTable</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/ZobristHash.h">
+      <Filter>Header Files\AI\HashTable</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/SortedMove.h">
+      <Filter>Header Files\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/Defines.h">
+      <Filter>Header Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/OpeningsDatabase.h">
+      <Filter>Header Files\AI\OpeningsDatabase</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/Opening.h">
+      <Filter>Header Files\AI\OpeningsDatabase</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/CoordsConverter.h">
+      <Filter>Header Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/OpeningDBResult.h">
+      <Filter>Header Files\AI\OpeningsDatabase</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/OpeningMove.h">
+      <Filter>Header Files\AI\OpeningsDatabase</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/Random.h">
+      <Filter>Header Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/FICSClient.h">
+      <Filter>Header Files\FICS</Filter>
+    </ClInclude>
+    <ClInclude Include="Source/Headers/ConfigLoader.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

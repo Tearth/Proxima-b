@@ -250,3 +250,17 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+
+# Cloc
+cloc.exe
+cloc.bat
+cloc-ignore.txt
+
+# Config file
+config.txt
+
+# SFML
+SFML-2.4.0/
+
+# Folders
+Boards

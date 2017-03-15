@@ -1,0 +1,15 @@
+field1
+field2
+selected
+bishop_b
+bishop_w
+king_b
+king_w
+knight_b
+knight_w
+pawn_b
+pawn_w
+queen_b
+queen_w
+rook_w
+rook_b

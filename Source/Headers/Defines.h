@@ -1,0 +1,4 @@
+#pragma once
+
+#define WHITE_MATE_SCORE  999999999
+#define BLACK_MATE_SCORE -999999999
