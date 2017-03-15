@@ -1,2 +1,2 @@
-# Proxima-b
-Chess engine
+# Proxima b
+Chess engine based on minmax alghoritm and transposition tables. 
