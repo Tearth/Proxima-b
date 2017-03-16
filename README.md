@@ -1,5 +1,7 @@
 # Proxima b
-Chess engine based on min-max algorithm and transposition tables. 
+Version 1.0
+
+Chess engine based on min-max algorithm, iterative deepening and transposition tables. 
 
 # Supported modes
 * Player vs AI
@@ -14,6 +16,9 @@ Chess engine based on min-max algorithm and transposition tables.
 * quiescence search - prevents from horizon problem, calculates very deep nodes (only captures, promotions or checks)
 * Zobrist hashing - calculates unique number for the board
 
+# FICS
+Proxima b is playing on Free Internet Chess Server (FICS) as "[proximab(C)](http://ficsgames.org/cgi-bin/search.cgi?player=proximab&action=Statistics)". Feel free to play with him :) The most common setting for games is 15/0 (or 10/0).
+
 # Console commands
 | Name        	| Description   			| 
 | ------------- | ------------------------- | 
@@ -27,7 +32,7 @@ Chess engine based on min-max algorithm and transposition tables.
 | IsMate (Mate) c      	|  writes "True" if the king with color [c] is mates | 
 | MarkPos (MPos) x y      	|  marks the specific position | 
 | DoMove (DM) a b x y      	|  does move from [a, b] to [x, y] | 
-| SetMaxTimeAI (MaxTime) s x y      	|  sets max time for AI algorithm | 
+| SetMaxTimeAI (MaxTime) x      	|  sets max time x for AI algorithm | 
 | SetGameMode (GameMode) x      	|  sets the game mode [x] | 
 | StopFICS      	| stops fics thread  | 
 | ResetBoard (Reset)     	|  resets board to default values | 
