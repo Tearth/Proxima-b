@@ -17,14 +17,7 @@
 #include "Headers/Defines.h"
 #include "Headers/OpeningsDatabase.h"
 #include "Headers/Random.h"
-
-class PVNode
-{
-public:
-	PVNode(unsigned long long int hash, Move move) { BoardHash = hash, BestMove = move; }
-	unsigned long long int BoardHash;
-	Move BestMove;
-};
+#include "Headers/PVNode.h"
 
 class AI
 {
@@ -32,6 +25,7 @@ public:
 	AI();
 	~AI();
 
+	//Inits AI
 	void Init(Console* console);
 
 	//Runs AI alghoritms for the specific board and returns the best move

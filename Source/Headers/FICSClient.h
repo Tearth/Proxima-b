@@ -18,6 +18,7 @@ class FICSClient
 public:
 	FICSClient();
 	~FICSClient();
+
 	void Init(Console* console, string userName, string password, string seek);
 
 	//Starts network thread

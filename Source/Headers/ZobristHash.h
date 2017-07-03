@@ -9,7 +9,7 @@ public:
 	ZobristHash();
 	~ZobristHash();
 
-	//Generate hash based on board data and castling parameters
+	//Generates hash based on board data and castling parameters
 	unsigned long long int GetHash(char boardArray[8][8], bool castlingArray[4]);
 private:
 	static unsigned long long int _randomTable[8][8][12];

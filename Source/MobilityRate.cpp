@@ -4,6 +4,7 @@ MobilityRate::MobilityRate()
 {
 	WhiteMobility = 0;
 	BlackMobility = 0;
+
 	BoardMobility = 0;
 }
 

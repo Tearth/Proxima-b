@@ -183,8 +183,6 @@ MinMaxResult AI::minMax(MinMaxInfo minMaxInfo, int alpha, int beta, MinMaxDiagno
 	vector<Move> moves = GetAllBoardMoves(minMaxInfo.Board, minMaxInfo.CurrentColor);
 	moves = sortMoves(moves, minMaxInfo.Board, minMaxInfo.CurrentColor);
 
-	//char z = minMaxInfo.Board.GetFieldAtPosition(Position(3, 0));
-
 	vector<MinMaxResult> results;
 	MinMaxResult best(INT32_MIN, 0);
 
@@ -375,8 +373,7 @@ vector<Move> AI::sortMoves(vector<Move> moves, Board board, EColor currentColor)
 		}
 		else
 		{
-			if (board.GetFieldAtPosition(moves[x].To) != '0' ||
-				moves[x].IsPromotion)
+			if (board.GetFieldAtPosition(moves[x].To) != '0' || moves[x].IsPromotion)
 			{
 				parsedMoves.insert(parsedMoves.begin() + i, moveToChange);
 				i++;
@@ -502,7 +499,7 @@ MinMaxResult AI::getBestMinMaxResult(vector<MinMaxResult> results, bool max)
 		}
 		else
 		{
-			if (results[i].Value < best.Value )
+			if (results[i].Value < best.Value)
 				best = results[i];
 		}
 	}

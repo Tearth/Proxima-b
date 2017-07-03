@@ -1,6 +1,6 @@
 #include "Headers/Move.h"
 
-Move::Move()
+Move::Move() : Move(Position(), Position(), false, ' ')
 {
 	IsPromotion = false;
 }

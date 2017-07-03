@@ -2,8 +2,18 @@
 
 FICSClient::FICSClient()
 {
+	Mode = FICSMode::None;
+
+	EnemyMove = "";
+	AIMove = "";
+	InitialColor = EColor::None;
 	LoopGames = false;
+
 	endThread = true;
+
+	_userName = "";
+	_password = "";
+	_seek = "";
 }
 
 FICSClient::~FICSClient()

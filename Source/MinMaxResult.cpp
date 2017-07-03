@@ -1,8 +1,8 @@
 #include "Headers/MinMaxResult.h"
 
-MinMaxResult::MinMaxResult()
+MinMaxResult::MinMaxResult() : MinMaxResult(0, 0)
 {
-	Value = 0;
+
 }
 
 MinMaxResult::MinMaxResult(int value, int depth)

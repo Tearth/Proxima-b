@@ -2,7 +2,7 @@
 
 SortedMove::SortedMove()
 {
-
+	Value = 0;
 }
 
 SortedMove::~SortedMove()

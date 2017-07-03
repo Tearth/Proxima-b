@@ -10,7 +10,9 @@ public:
 
 	Board Board;
 	EColor CurrentColor;
+
 	int InitialDepth;
 	int CurrentDepth;
+
 	Move Move;
 };

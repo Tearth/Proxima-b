@@ -1,6 +1,6 @@
 #include "Headers/TableItem.h"
 
-TableItem::TableItem()
+TableItem::TableItem() : TableItem(ValueType::None, 0, 0, Move())
 {
 
 }

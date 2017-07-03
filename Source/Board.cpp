@@ -2,7 +2,14 @@
 
 Board::Board()
 {
-	
+	MovesCount = 0;
+
+	CastlingWhiteDone = false;
+	CastlingBlackDone = false;
+	CastlingWhiteShort = false;
+	CastlingWhiteLong = false;
+	CastlingBlackShort = false;
+	CastlingBlackLong = false;
 }
 
 Board::~Board()

@@ -213,6 +213,9 @@
     <ClCompile Include="Source/AI.cpp">
       <Filter>Source Files\AI</Filter>
     </ClCompile>
+    <ClCompile Include="Source\PVNode.cpp">
+      <Filter>Source Files\AI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source/Headers/PieceBase.h">
@@ -349,6 +352,9 @@
     </ClInclude>
     <ClInclude Include="Source/Headers/ConfigLoader.h">
       <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Headers\PVNode.h">
+      <Filter>Header Files\AI</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

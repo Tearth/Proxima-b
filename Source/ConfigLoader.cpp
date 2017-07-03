@@ -27,6 +27,8 @@ bool ConfigLoader::LoadFromFile(string fileName)
 
 		values[key] = value;
 	}
+
+	file.close();
 }
 
 string ConfigLoader::GetValueOfKey(string key)

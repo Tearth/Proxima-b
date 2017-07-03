@@ -7,7 +7,7 @@ using namespace std;
 class SpriteRecord
 {
 public:
-	SpriteRecord(string Name, sf::Sprite sprite);
+	SpriteRecord(string name, sf::Sprite sprite);
 	~SpriteRecord();
 
 	string Name;

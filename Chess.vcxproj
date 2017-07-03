@@ -168,6 +168,7 @@
     <ClCompile Include="Source/TimerRecord.cpp" />
     <ClCompile Include="Source/Window.cpp" />
     <ClCompile Include="Source/ZobristHash.cpp" />
+    <ClCompile Include="Source\PVNode.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source/Headers/AI.h" />
@@ -215,6 +216,7 @@
     <ClInclude Include="Source/Headers/TimerRecord.h" />
     <ClInclude Include="Source/Headers/Window.h" />
     <ClInclude Include="Source/Headers/ZobristHash.h" />
+    <ClInclude Include="Source\Headers\PVNode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
