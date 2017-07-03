@@ -9,7 +9,7 @@ Chess engine based on min-max algorithm, iterative deepening and transposition t
 * AI vs FICS (Free Internet Chess Server)
 
 # Used algorithms
-* negamax search - simplify implementation of minmax algorithm
+* negamax search - simple implementation of minmax algorithm
 * alpha-beta pruning - decreases the number of nodes parsed by the negamax
 * transposition tables - cache for parsed positions, prevents from double calculation of node
 * iterative deepening - iterative increasing of maximal depth
