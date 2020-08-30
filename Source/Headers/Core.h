@@ -31,6 +31,7 @@ private:
 	void loadBoard(string fileName);
 	sf::Sprite GetSpriteByName(string name);
 	sf::Vector2f getPositionByBoardCoords(Position pos);
+	unsigned long long perft(Board board, AI ai, EColor color, int depth);
 
 	AI _ai;
 	Window _window;

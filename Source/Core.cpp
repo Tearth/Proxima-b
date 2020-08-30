@@ -585,6 +585,31 @@ void Core::parseConsole()
 
 			break;
 		}
+		case(ECommandType::PerftCommand):
+		{
+			if (c.Arguments.size() < 1)
+			{
+				_console.AddNewLine("Invalid parameters count");
+				break;
+			}
+			int depth = atoi(c.Arguments[0].c_str());
+
+			AI ai;
+			Board board;
+			char buffer[16];
+
+			board.InitDefaultSettings();
+			
+			Timer::Start("Perft");
+			unsigned long long result = perft(board, ai, EColor::White, depth);
+			float elapsedTime = Timer::ElapsedTime("Perft");
+			
+			_console.AddNewLine("Leafs: " + to_string(result));
+			_console.AddNewLine("Time: " + to_string(elapsedTime));
+
+			Timer::Stop("Perft");
+			break;
+		}
 		case(ECommandType::Help):
 		{
 			_console.AddNewLine("Available commands:");
@@ -604,6 +629,7 @@ void Core::parseConsole()
 			_console.AddNewLine(" ResetBoard - reset board to default");
 			_console.AddNewLine(" SendFICS - send command to FICS");
 			_console.AddNewLine(" FICSLoop - loop FICS games");
+			_console.AddNewLine(" Perft - test performance");
 			_console.AddNewLine(" Help - you are here");
 				
 			break;
@@ -712,4 +738,31 @@ void Core::loadBoard(string fileName)
 		x++;
 	}
 	dataFile.close();
+}
+
+unsigned long long Core::perft(Board board, AI ai, EColor color, int depth)
+{
+	if (depth <= 0)
+	{
+		return 1;
+	}
+
+	std::vector<Move> moves = ai.GetAllBoardMoves(board, color);
+
+	unsigned long long nodes = 0;
+	for (int i = 0; i < moves.size(); i++)
+	{
+		Board boardAfterMove = board;
+		Move move = moves[i];
+
+		boardAfterMove.DoMove(move);
+
+		if ((color == EColor::White && ai.IsCheck(boardAfterMove, EColor::White)) ||
+			(color == EColor::Black && ai.IsCheck(boardAfterMove, EColor::Black)))
+			continue;
+		
+		nodes += perft(boardAfterMove, ai, color == EColor::White ? EColor::Black : EColor::White, depth - 1);
+	}
+
+	return nodes;
 }

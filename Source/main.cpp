@@ -1,6 +1,3 @@
-#ifdef _DEBUG
-#include <vld.h>
-#endif
 #include "Headers/Core.h"
 
 /*

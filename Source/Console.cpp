@@ -117,6 +117,7 @@ void Console::parseCommand()
 	else if (commandText == "help" || commandText == "h") commandType = ECommandType::Help;
 	else if (commandText == "sendfics" || commandText == "sendficscommand") commandType = ECommandType::SendFICSCommand;
 	else if (commandText == "ficsloop") commandType = ECommandType::FICSLoop;
+	else if (commandText == "perft") commandType = ECommandType::PerftCommand;
 	else return;
 
 	vector<string> args;

@@ -26,7 +26,8 @@ enum class ECommandType
 	ResetBoard,
 	Help,
 	SendFICSCommand,
-	FICSLoop
+	FICSLoop,
+	PerftCommand
 };
 
 enum class EGamePhase
